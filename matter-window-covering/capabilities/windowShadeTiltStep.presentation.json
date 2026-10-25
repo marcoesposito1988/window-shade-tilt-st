@@ -1,0 +1,41 @@
+{
+  "id": "windowShadeTilt.windowShadeTiltStep",
+  "version": 1,
+  "dashboard": {
+    "states": [],
+    "actions": []
+  },
+  "detailView": [
+    {
+      "label": "Tilt up",
+      "displayType": "pushButton",
+      "pushButton": {
+        "command": "tiltUp"
+      }
+    },
+    {
+      "label": "Tilt down",
+      "displayType": "pushButton",
+      "pushButton": {
+        "command": "tiltDown"
+      }
+    }
+  ],
+  "automation": {
+    "conditions": [],
+    "actions": [
+      {
+        "label": "Step tilt",
+        "displayType": "slider",
+        "slider": {
+          "command": "stepTiltLevel",
+          "range": [
+            -100,
+            100
+          ],
+          "step": 1
+        }
+      }
+    ]
+  }
+}

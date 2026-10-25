@@ -1,0 +1,29 @@
+{
+  "id": "windowShadeTilt.windowShadeTiltStep",
+  "version": 1,
+  "status": "proposed",
+  "name": "Window Shade Tilt Step",
+  "attributes": {},
+  "commands": {
+    "tiltUp": {
+      "name": "tiltUp",
+      "arguments": []
+    },
+    "tiltDown": {
+      "name": "tiltDown",
+      "arguments": []
+    },
+    "stepTiltLevel": {
+      "name": "stepTiltLevel",
+      "arguments": [
+        {
+          "name": "stepSize",
+          "optional": false,
+          "schema": {
+            "type": "integer"
+          }
+        }
+      ]
+    }
+  }
+}

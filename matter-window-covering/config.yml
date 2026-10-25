@@ -1,0 +1,6 @@
+name: 'Matter Window Covering Tilt'
+packageKey: 'window-shade-tilt'
+permissions:
+  matter: {}
+description: "SmartThings driver for Matter window covering devices"
+vendorSupportInformation: "https://support.smartthings.com"

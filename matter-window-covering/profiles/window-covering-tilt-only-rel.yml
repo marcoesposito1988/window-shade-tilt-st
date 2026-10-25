@@ -1,0 +1,30 @@
+name: window-covering-tilt-only-rel
+components:
+- id: main
+  capabilities:
+  - id: windowShade
+    version: 1
+  - id: windowShadeTiltLevel
+    version: 1
+  - id: firmwareUpdate
+    version: 1
+  - id: refresh
+    version: 1
+  categories:
+  - name: Blind
+- id: tilt
+  capabilities:
+  - id: statelessWindowShadeLevelStep
+    version: 1
+preferences:
+  - preferenceId: reverse
+    explicit: true
+  - name: tiltStepSize
+    title: Tilt step size
+    description: Percent moved by each tilt up or down command.
+    required: false
+    preferenceType: integer
+    definition:
+      minimum: 1
+      maximum: 100
+      default: 25
